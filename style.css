@@ -1,0 +1,230 @@
+/* fonts */
+@font-face {
+  font-family: openSans;
+  src: url(Fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+
+font-family: display;
+src: url(Fonts/Fascinate-Regular.ttf);
+
+}
+
+
+body{
+  background-image: url("img/bg1.jpg");
+  background-attachment: fixed;
+  background-size: 120vw;
+}
+.intro-title {
+  color:black;
+  font-family: 'Zen Tokyo Zoo';
+  text-align: center;
+  font-size: 7.5vw;
+  margin-bottom: 0;
+}
+
+.intro-sub {
+  font-family: 'Syne Mono';
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 0;
+}
+
+/*slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Syne Mono';
+  background-image: linear-gradient( rgba(0,0,0,0),rgba(0 ,0,0,0.8), rgba(0 ,0,0,1));
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:100px;
+  background-color: #000000;
+  position: fixed;
+  height:24%;
+  overflow: auto;
+  border-radius: 5px;
+  background: #000000;
+}
+
+.sidebar a {
+  display: block;
+  color:#696969;
+  padding: 16px;
+  text-decoration: none;
+  font-family: OpenSans;
+}
+
+.sidebar a.active {
+  background-color: #696969;
+  color:#fcfcfc;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #4f4f4f;
+  color:#b8b8b8;
+}
+
+div.content {
+  margin-left: 100px;
+  padding: 1px 16px;
+
+}
+
+/* gear.html */
+.gear-content {
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255,255,255, .7);
+  width: 75vw;
+  font-family: 'OpenSans';
+  border-radius: 30px;
+}
+
+.gear-heading {
+padding-top: 15px;
+}
+
+.gear-link {
+
+}
+
+.gear-text {
+
+}
+
+.foot {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* responsiveness */
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-size: 170vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: 220vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 260vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar{
+    width:100%;
+    height:auto;
+    position: relative;
+  }
+  body {
+    background-size: 300vw;
+  }
+  .sidebar a {float:left;}
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 425vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  body {
+    background-size: 600vw;
+  }
+}
