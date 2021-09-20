@@ -170,11 +170,22 @@ padding-top: 15px;
 .gear-text {
 
 }
-
+/*footer*/
 .foot {
   text-align: center;
   color: white;
   padding-top: 30px;
+  padding-bottom: 20px;
+}
+a.footlink{
+  color:white;
+  text-decoration: none;
+}
+
+a.footlink:hover{
+  color:white;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 
